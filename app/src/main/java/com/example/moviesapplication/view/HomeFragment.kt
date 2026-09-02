@@ -45,6 +45,7 @@ class HomeFragment : Fragment(){
         return binding.root
     }
 
+    //update the fresh recyclerview
     private fun prepareRecyclerView() {
         movieAdapter = MovieAdapter { position -> onListItemClick(position)  }
         binding.rvMovies.apply {
